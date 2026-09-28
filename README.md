@@ -40,3 +40,6 @@ Program that allows for task adding and viewing for daily task management.
 
 -[Task editting]
 
+## Version Control
+
+[The project uses git and github to upload to a cloud repository from a local repository. Changes can be committed, and then pushed to the cloud repository on github. To update the project locally pull the latest updated version from github]
