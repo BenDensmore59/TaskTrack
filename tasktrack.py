@@ -53,6 +53,15 @@ def load_tasks(filename):
 
     return tasks
 
+def save_tasks(tasks, filename):
+    """Save all tasks to a text file."""
+    with open(filename, "w") as file:
+
+        # Loop through the tasks list.
+        for task in tasks:
+            # Write each task followed by a newline character.
+            file.write(f"{task}\n")
+
 def main():
     """Run the TaskTrack menu until the user chooses to exit."""
     tasks = load_tasks(TASKS_FILE)
@@ -65,6 +74,7 @@ def main():
             view_tasks(tasks)
         elif choice == "2":
             add_task(tasks)
+            save_tasks(tasks, TASKS_FILE)
         elif choice == "3":
             print("Goodbye!")
             break
