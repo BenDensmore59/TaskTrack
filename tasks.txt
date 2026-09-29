@@ -1,6 +1,3 @@
-Complete ICA04
-Review GitHub commands
-Update the TaskTrack README
-Test persistent storage
 Go to CPS310 at 2pm
-eat food
+complete ica5
+test task removal
