@@ -77,7 +77,11 @@ def remove_task(tasks):
         return False
 
     view_tasks(tasks)
-    selection = input("Enter the number of the task to remove: ").strip()
+    selection = input("Enter the number of the task to remove or 'back' to return: ").strip().lower()
+
+    # Allow the user to return to the main menu.
+    if selection == "back":
+        return False
 
     # Reject input that is not numeric.
 
